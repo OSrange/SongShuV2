@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp">
+
+    <TextView
+        android:id="@+id/musicName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/darkGrey"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/download_iv"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/download"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"/>
+</RelativeLayout>

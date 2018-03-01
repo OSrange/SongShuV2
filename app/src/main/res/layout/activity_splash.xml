@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/songshu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"/>
+    <View
+        android:id="@+id/aboveLine"
+        android:layout_width="221dp"
+        android:layout_height="0.5dp"
+        android:background="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/ceter_rl"/>
+
+    <RelativeLayout
+        android:id="@+id/ceter_rl"
+        android:layout_width="221dp"
+        android:layout_height="41dp"
+        android:layout_centerInParent="true">
+
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:maxLength="7"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:hint="@string/edit_hint"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:layout_below="@+id/name_et"/>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:layout_toRightOf="@+id/login_bt"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:layout_toLeftOf="@+id/login_bt"/>
+        <Button
+            android:id="@+id/login_bt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/name_et"
+            android:background="@drawable/arrow"/>
+    </RelativeLayout>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音乐纯粹，爱V绝对！"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:textColor="@color/vaeBlue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"/>-->
+</RelativeLayout>
